@@ -1,0 +1,1 @@
+export { AppRecipeComponent } from './app.recipe.component';

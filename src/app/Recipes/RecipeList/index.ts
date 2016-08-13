@@ -1,0 +1,1 @@
+export { AppRecipeListComponent } from './app.recipelist.component';
