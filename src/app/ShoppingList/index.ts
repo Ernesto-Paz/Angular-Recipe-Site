@@ -1,0 +1,1 @@
+export { ShoppingListComponent } from './app.shoppinglist.component.ts' ;

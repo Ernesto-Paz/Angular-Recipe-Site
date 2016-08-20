@@ -3,4 +3,4 @@
     [recipe] refers to the recipe in recipelistitem and the other "recipe" refers to
     the recipe that was passed in from the recipelist.
     -->
-<ra-recipelistitem [recipeitem] = dummyrecipe></ra-recipelistitem>
+<ra-recipelistitem [recipeitem] = "dummyrecipe" (click)="onSelected(dummyrecipe)"></ra-recipelistitem>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { AppRecipeListItemComponent } from './app.recipelistitem.component'
 import { Recipe } from '../recipeclass';
 @Component({
@@ -11,8 +11,16 @@ directives: [AppRecipeListItemComponent],
 export class AppRecipeListComponent {
 
 recipes: Recipe[] = [];
-dummyrecipe: Recipe = new Recipe("Dummy", "Dummy", "/Gatomon.png");
+
+@Output() recipeSelected = new EventEmitter<Recipe>();
+
+dummyrecipe: Recipe = new Recipe("Cat", "A Caitlyn.", "/Gatomon.png");
 constructor(){
+
+}
+
+onSelected(recipe: Recipe){
+this.recipeSelected.emit(recipe);
 
 }
 }
